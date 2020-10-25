@@ -1,0 +1,19 @@
+ED:
+	hPartida, mPartida, hChegada, mChegada, hDuracao, mDuracao INTEIRO
+ALG
+INICIO
+	LER(hPartida, mPartida, hDuracao, mDuracao)
+	SE ((mPartida + mDuracao)>60) ENTAO
+		hDuracao <- hDuracao + 1
+		mChegada <- (mPartida + mDuracao) - 60
+	SENAO
+		mChegada <- mPartida + mDuracao
+	FIMSE
+	SE ((hPartida+hDuracao)>24) ENTAO
+		hChegada <- hPartida+hDuracao-24
+		ESCREVER("O comboio chega no dia seguinte às " + hChegada + ":" + mChegada)
+	SENAO
+		hChegada <- hPartida+hDuracao
+		ESCREVER("O comboio às " + hChegada + ":" + mChegada)
+	FIMSE
+FIMSE

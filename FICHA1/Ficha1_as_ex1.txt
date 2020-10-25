@@ -1,0 +1,17 @@
+ED:
+	num, dig1, dig2, dig3, INTEIRO
+ALG
+INICIO
+	LER(num)
+	SE (num <100 OU num >999) ENTAO
+		ESCREVER("Número não tem 3 dígitos")
+	SENAO
+		dig3 <- num MOD 10
+		dig2 <- (num DIV 10) MOD 10
+		dig1 <- (num DIV 100) MOD 10
+		SE ((num MOD 2) = 0) ENTAO
+			ESCREVER(dig1, " ", dig2, " ", dig3, " e é PAR")
+		SENAO
+			ESCREVER(dig1, " ", dig2, " ", dig3, " e é IMPAR")
+	FIMSE
+FIMSE

@@ -1,0 +1,30 @@
+ED:
+	num1, num2, num3 INTEIRO
+ALG
+INICIO
+	LER(num1, num2, num3)
+
+	SE ((num2 < num3) E (num2 > num1)) ENTAO
+		ESCREVER(num1 + " " + num2 + " " num3)
+	FIMSE
+
+	SE ((num3 < num1) E (num3 > num2)) ENTAO
+		ESCREVER(num2 + " " + num3 + " " num1)
+	FIMSE
+
+	SE ((num3 < num2) E (num3 > num1)) ENTAO
+		ESCREVER(num1 + " " + num3 + " " num2)
+	FIMSE
+	
+	SE ((num1 < num3) E (num1 > num2)) ENTAO
+		ESCREVER(num2 + " " + num1 + " " num3)
+	FIMSE
+
+	SE ((num1 < num2) E (num1 > num3)) ENTAO
+		ESCREVER(num3 + " " + num1 + " " num2)
+	FIMSE
+
+	SE ((num2 < num1) E (num2 > num3)) ENTAO
+		ESCREVER(num3 + " " + num2 + " " num1)
+	FIMSE
+FIMSE

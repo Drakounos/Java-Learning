@@ -1,0 +1,20 @@
+ED:
+	num1, num2, num3, a INTEIRO
+ALG
+INICIO
+	LER(num1, num2, num3)
+
+	SE (num1>num2) ENTAO
+		a <- num2
+		num2 <- num1
+		num1 <- a
+	FIMSE
+	
+	SE (num2 > num3) ENTAO
+		a <- num3
+		num3 <- num2
+		num2 <- a
+	FIMSE
+	
+	ESCREVER(num1 + " " + num2 + " " + num3)
+FIMSE

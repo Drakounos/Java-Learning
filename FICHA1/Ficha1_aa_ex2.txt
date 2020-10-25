@@ -1,0 +1,11 @@
+ED:
+	x1, x2, y1, y2 INTEIRO
+	dist FLOAT
+ALG
+INICIO
+	LER(x1, y1, x2, y2)
+
+	dist <- RAIZ(((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1)))
+	
+	ESCREVER("A distância entre os dois pontos é de + dist)
+FIMSE

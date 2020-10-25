@@ -1,0 +1,11 @@
+ED:
+	num1, num2, num3, num4, num5 INTEIRO
+	mediaKm DOUBLE
+ALG
+INICIO
+	LER(num1, num2, num3, num4, num5)
+
+	mediaKm <- ((num1 + num2 + num3 + num4 + num5) / 5) * 1.609
+	
+	ESCREVER("A média em Kms percorridos é + mediaKm)
+FIMSE
